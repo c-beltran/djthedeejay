@@ -45,9 +45,9 @@
                             <ul>
                                 <li><a href="./index.html" style="color: #ffff !important;">Home</a></li>
                                 <li><a href="./about.html" style="color: #ffff !important;">About</a></li>
-                                <li><a href="./discography.html" style="color: #ffff !important;">Gallery</a></li>
+                                <!-- <li><a href="./discography.html" style="color: #ffff !important;">Gallery</a></li> -->
                                 <li><a href="./packages.html" style="color: #ffff !important;">Packages</a></li>
-                                <li><a href="./videos.html" style="color: #ffff !important;">Videos</a></li>
+                                <li><a href="./photobooth.html" style="color: #ffff !important;">Photo Booth</a></li>
                                 <li><a href="./contact.html" style="color: #ffff !important;">Contact</a></li>
                             </ul>
                         </nav>
@@ -67,16 +67,34 @@
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero spad set-bg" data-setbg="img/hero-bg.png">
+    <section class="hero spad set-bg" data-setbg="img/deejay-main-bk.png">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="hero__text">
-                        <span>New single</span>
-                        <h1>Feel the heart beats</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br />tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="https://www.youtube.com/watch?v=K4DyBUG242c" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                    <div class="hero__text" style="padding-top: 52px;">
+                        <!-- <span>New single</span> -->
+                        
+                        <!-- <h1>Feel the heart beats</h1> -->
+
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br />tempor -->
+                            <!-- incididunt ut labore et dolore magna aliqua.</p> -->
+                        <!-- <a href="https://www.youtube.com/embed/AzheoAMYwfE?si=L5ye7yDSa5wbbtu7&amp;controls=0" class="play-btn video-popup"></a> -->
+                        
+
+                        <button class="play-btn video-popup" data-video="https://www.youtube.com/embed/zoDMNFrNrDo?si=OWp9gd2IsWiUG4lh" data-toggle="modal" data-target="#videoModal"><i class="fa fa-play"></i></button>
+
+                        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <iframe width="480" height="325"
+                                        src="https://www.youtube.com/embed/zoDMNFrNrDo?si=OWp9gd2IsWiUG4lh" allowfullscreen>
+                                    </iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,7 +119,7 @@
                 <div class="event__slider owl-carousel">
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-1.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/wedding_pic.jpg">
                             </div>
                             <div class="event__item__text">
                                 <h4>Weddings</h4>
@@ -111,17 +129,17 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-2.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/corporate_event_pic.jpg">
                             </div>
                             <div class="event__item__text">
-                                <h4>Coorporate Events</h4>
+                                <h4>Corporate Events</h4>
                                 <!-- <p><i class="fa fa-map-marker"></i> Funkhaus Berlin, Berlin, Germany</p> -->
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-3.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/private-party_pic.jpg">
 
                             </div>                            <div class="event__item__text">
                                 <h4>Private Party</h4>
@@ -131,7 +149,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="event__item">
-                            <div class="event__item__pic set-bg" data-setbg="img/events/event-2.jpg">
+                            <div class="event__item__pic set-bg" data-setbg="img/events/quince_pic.jpg">
                             </div>
                             <div class="event__item__text">
                                 <h4>Quinceañera</h4>
@@ -151,7 +169,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about__pic">
-                        <img src="img/about/about.png" alt="">
+                        <img src="img/Deejay.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -175,7 +193,23 @@
             <div class="row">
                 <div class="col-lg-6 p-0">
                     <div class="services__left set-bg" data-setbg="img/services/service-left.jpg">
-                        <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="play-btn video-popup"><i class="fa fa-play"></i></a>
+                        <!-- <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" class="play-btn video-popup"><i class="fa fa-play"></i></a> -->
+
+                        <button class="play-btn video-popup" data-video="https://www.youtube.com/embed/AzheoAMYwfE?si=L5ye7yDSa5wbbtu7" data-toggle="modal" data-target="#videoModalTwo"><i class="fa fa-play"></i></button>
+
+                        <div class="modal fade" id="videoModalTwo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <!-- <iframe width="480" height="325"
+                                        src="https://www.youtube.com/embed/zoDMNFrNrDo?si=OWp9gd2IsWiUG4lh" allowfullscreen>
+                                    </iframe> -->
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zoDMNFrNrDo?si=OWp9gd2IsWiUG4lh&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 p-0">
@@ -184,28 +218,28 @@
                             <div class="service__item deep-bg">
                                 <img src="img/services/service-1.png" alt="">
                                 <h4>Wedding</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p> -->
                             </div>
                         </div>
                         <div class="col-lg-6 p-0 order-lg-2 col-md-6 order-md-2">
                             <div class="service__item">
                                 <img src="img/services/service-2.png" alt="">
                                 <h4>Clubs and bar</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p> -->
                             </div>
                         </div>
                         <div class="col-lg-6 p-0 order-lg-4 col-md-6 order-md-4">
                             <div class="service__item deep-bg">
                                 <img src="img/services/service-4.png" alt="">
-                                <h4>DJ lessons</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                <h4>Private Parties</h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p> -->
                             </div>
                         </div>
                         <div class="col-lg-6 p-0 order-lg-3 col-md-6 order-md-3">
                             <div class="service__item">
                                 <img src="img/services/service-3.png" alt="">
                                 <h4>Corporate events</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p> -->
                             </div>
                         </div>
                     </div>
@@ -213,10 +247,11 @@
             </div>
         </div>
     </section>
+    <p></p>
     <!-- Services Section End -->
 
     <!-- Youtube Section Begin -->
-    <section class="youtube spad">
+    <!-- <section class="youtube spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -259,7 +294,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- Youtube Section End -->
 
     <!-- Footer Section Begin -->
@@ -341,6 +376,20 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- <script>
+        $(function() {
+            $(".video").click(function () {
+                var theModal = $(this).data("target"),
+                    videoSRC = $(this).attr("data-video"),
+                    videoSRCauto = videoSRC + "";
+                $(theModal + ' source').attr('src', videoSRCauto);
+                $(theModal + ' button.close').click(function () {
+                $(theModal + ' source').attr('src', videoSRC);
+                });
+            });
+        });
+    </script> -->
 
     <!-- Music Plugin -->
     <script src="js/jquery.jplayer.min.js"></script>
