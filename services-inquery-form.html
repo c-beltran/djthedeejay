@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="DJtheDeeJay Template">
-    <meta name="keywords" content="DJtheDeeJay, unica, creative, html">
+    <meta name="description" content="DJtheDeeJay">
+    <meta name="keywords" content="DJoz, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DJtheDeeJay | Template</title>
+    <title>DJtheDeeJay</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <!-- font awesome-->
-    <script src="https://kit.fontawesome.com/815e9e56d3.js" crossorigin="anonymous"></script>
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -25,20 +23,53 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <style type="text/css">
-        .iframe-container {
-        overflow: hidden;
-        /* 16:9 aspect ratio */
-        padding-top: 119.25%;
-        position: relative;
+    <!-- Google Form Style -->
+    <style>
+        /* Replace previous google-form styles with these */
+        .google-form-wrapper {
+            width: 100%;
+            margin: 40px 0;
+            border-radius: 8px;
+            background: #fff;
+            min-height: 100vh; /* Ensure minimum full viewport height */
         }
-        .iframe-container iframe {
-        border: 0;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
+        
+        .google-form-iframe {
+            width: 100%;
+            height: 1500px; /* Base height for desktop */
+            border: none;
+            transform-origin: top left;
+        }
+        
+        @media (max-width: 991px) {
+            .google-form-wrapper {
+                margin: 20px -15px; /* Bleed to screen edges */
+                width: calc(100% + 30px);
+                border-radius: 0;
+            }
+            
+            .google-form-iframe {
+                height: 1800px; /* Increased height for tablet */
+                transform: scale(0.95); /* Slight zoom */
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .google-form-iframe {
+                height: 2200px; /* Even taller for mobile */
+                transform: scale(0.9); /* More zoom */
+                margin-left: -2%;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .google-form-iframe {
+                height: 2600px; /* Adjust based on actual form length */
+                transform: scale(0.85);
+                width: 105%;
+                /* margin-left: -7%; */
+            }
         }
     </style>
 </head>
@@ -50,12 +81,12 @@
     </div>
 
     <!-- Header Section Begin -->
-    <header class="header header--normal" style="background-color: #ffff !important;">
+    <header class="header header--normal">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 col-md-2">
-                    <div class="header__logo" style="text-align: center;">
-                        <a href="./index.html"><img src="img/dj-logo.png" alt="" style="margin-right: 250px;"></a>
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/dj-logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-10">
@@ -66,8 +97,8 @@
                                 <li><a href="./about.html">About</a></li>
                                 <!-- <li><a href="./discography.html">Gallery</a></li> -->
                                 <li><a href="./packages.html">Packages</a></li>
-                                <li><a href="./photobooth.html">Photo Booth</a></li>
-                                <li class="active"><a href="./contact.html">Contact</a></li>
+                                <li class="active"><a href="./photobooth.html">Photo Booth</a></li>
+                                <li><a href="./contact.html">Contact</a></li>
                             </ul>
                         </nav>
                         <div class="header__right__social">
@@ -91,8 +122,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__links">
-                        <a href="index.html"><i class="fa fa-home"></i> Home</a>
-                        <span>Contact</span>
+                        <a href="packages.html"><i class="fa fa-home"></i> Packages</a>
+                        <span>Inquiry Form</span>
                     </div>
                 </div>
             </div>
@@ -100,53 +131,32 @@
     </div>
     <!-- Breadcrumb End -->
 
-    <!-- Contact Section Begin -->
-    <section class="contact spad" style="background-color: #e9f1fe;">
+    <!-- Video Section Begin -->
+    <section class="about about--page spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="contact__address">
-                        <div class="section-title">
-                            <h2>Contact info</h2>
+                <div class="col-lg-12">
+                    <div class="about__text">
+                        <div class="google-form-wrapper">
+                            <iframe class="google-form-iframe" 
+                                    src="https://docs.google.com/forms/d/e/1FAIpQLSdxyBFDC1i3IVX8chQjrO1cmBOIskjvNd7_GSypHJYuB1pdcw/viewform?embedded=true" 
+                                    frameborder="0" 
+                                    marginheight="0" 
+                                    marginwidth="0">
+                                Loading…
+                            </iframe>
                         </div>
-                        <p>We are available to take your call 7 days a week, day, or night!  If you do not reach us on your first attempt, expect a return call or email within the hour!
-                            You are important to us, and we will do everything possible to show you exactly that!
-                        </p>
-                        <ul>
-                            <li>
-                                <i class="fa fa-phone"></i>
-                                <h5>Phone Number</h5>
-                                <a href="tel:774-823-5039"><span>774-823-5039</span></a>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope"></i>
-                                <h5>Email</h5>
-                                <a href="mailto:DJ@TheRealDJtheDeeJay.com"><p>DJ@TheRealDJtheDeeJay.com</p></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="contact__form">
-                        <div class="section-title">
-                        </div>
-                            <div class="iframe-container">
-                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdOZIjesiW0Xc9ZnLK_xnTHsptb_4vBWznb85FxdXA77cKq3Q/viewform?embedded=true" width="640" height="1250" frameborder="0" marginheight="0" marginwidth="0" style="border-radius: 5px;">Loading…</iframe>
-                            </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- <div class="map" style="margin-bottom: 50px;">
-        <div class="container">
-            <h2 style='font-family: "Roboto", sans-serif; font-weight: 700;'>View Availability</h2>
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23e9edfe&ctz=America%2FNew_York&showTitle=0&showCalendars=0&showPrint=0&src=dGhlcmVhbGRqdGhlZGVlamF5QGdtYWlsLmNvbQ&color=%233F51B5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    <!-- About Section End -->
+                </div>
+            </div>
         </div>
-    </div> -->
-    
-    <!-- Contact Section End -->
+    </section>
+    <!-- Video Section End -->
 
     <!-- Footer Section Begin -->
     <div>
@@ -216,6 +226,32 @@
     </div>
     </footer>
     <!-- Footer Section End -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.querySelector('.google-form-iframe');
+            
+            // Dynamically adjust height based on device
+            function adjustFormHeight() {
+                const isMobile = window.matchMedia("(max-width: 767px)").matches;
+                iframe.style.height = isMobile ? window.innerHeight * 2.5 + 'px' : '1500px';
+            }
+        
+            // Initial adjustment
+            adjustFormHeight();
+            
+            // Adjust on window resize
+            window.addEventListener('resize', adjustFormHeight);
+            
+            // Extra insurance for form content
+            iframe.onload = function() {
+                this.style.transform = 'scale(1)';
+                setTimeout(() => {
+                    this.contentDocument.body.style.zoom = window.innerWidth < 768 ? 1.3 : 1;
+                }, 1000);
+            };
+        });
+        </script>
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>

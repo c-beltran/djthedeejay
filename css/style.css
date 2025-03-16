@@ -263,7 +263,7 @@ ol {
 -----------------------*/
 
 .header {
-	background: rgba(74, 1, 1, 0.5);
+	/* background: rgba(74, 1, 1, 0.5); */
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -2711,6 +2711,8 @@ ol {
 	.hero {
 		padding-top: 190px;
 		padding-bottom: 200px;
+		margin-top: 48px;
+		margin-bottom: -20px;
 	}
 	.event .section-title:after {
 		display: none;
